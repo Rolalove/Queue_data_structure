@@ -1,0 +1,208 @@
+---
+# You can also start simply with 'default'
+theme: seriph
+# random image from a curated Unsplash collection by Anthony
+# like them? see https://unsplash.com/collections/94734566/slidev
+background: https://cover.sli.dev
+# some information about your slides (markdown enabled)
+title: Queue Data Structure
+info: |
+  ## Everything you need to know about Queue
+
+  
+# apply unocss classes to the current slide
+class: text-center
+# https://sli.dev/custom/highlighters.html
+highlighter: shiki
+# https://sli.dev/guide/drawing
+drawings:
+  persist: false
+# slide transition: https://sli.dev/guide/animations#slide-transitions
+transition: slide-left
+# enable MDC Syntax: https://sli.dev/guide/syntax#mdc-syntax
+mdc: true
+---
+
+# Queue Data Structure
+
+<div class="pt-12">
+  <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
+    Press Space to learn more about Queue <carbon:arrow-right class="inline"/>
+  </span>
+</div>
+
+<div class="abs-br m-6 flex gap-2">
+  
+  <a href="#" target="_blank" alt="GitHub" title="Open in GitHub"
+    class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
+    <carbon-logo-github />
+  </a>
+</div>
+
+---
+transition: slide-left
+---
+# Table of Contents ?
+- will work on thisssssssssssss
+
+---
+transition: slide-left
+---
+
+# Let understand the idea behind Queue ?
+![images show people on queue](https://www.shutterstock.com/shutterstock/photos/1868517280/display_1500/stock-vector-bank-queue-cartoon-people-standing-in-row-to-cashier-men-and-women-waiting-in-line-payments-and-1868517280.jpg)
+
+<!--
+You can have `style` tag in markdown to override the style for the current page.
+Learn more: https://sli.dev/guide/syntax#embedded-styles
+-->
+
+
+<!--
+Here is another comment.
+-->
+
+---
+transition: slide-up
+level: 2
+---
+
+# What is Queue?
+- Linear data structure (A linear data structure is a type of data structure that stores the data linearly or sequentially.)
+- Open at both ends 
+- Operates on a **First In First Out (FIFO) principle**. 
+- Elements are inserted at the rear(back) of the queue 
+- Elements are removed from the front of the queue 
+<br>
+<br>
+<p class="text-red-500">NOTE: <span v-mark.circle.orange class="text-white">You can't access random elements in the queue!</span></p>
+**Descriptive Explanation:** <br>
+Imagine it like a line of people waiting to deposit in the bank. The first person who gets in line (the first element added) is the first to be attended to (the first element to be removed).
+The end at which insertion takes place is called the REAR/TAIL(the line the customer enters to wait) while the end at which deletion takes place is called the FRONT/HEAD(the path the customer passes to leave).
+
+
+
+
+---
+transition: slide-left
+layout: center
+
+---
+
+# Visual Representation Of Queue Data Structure
+
+![Visual Represntation of Queue Data Structure](https://media.dev.to/cdn-cgi/image/width=600%2Cheight=400%/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F93m34kw984t3ikkyfqr5.jpg)
+
+
+
+---
+transition: slide-left
+layout: center
+
+
+---
+
+# Types Of Queue
+Basically we have four types of Queue:
+![Visual Representation of the various types of Queue](https://media.dev.to/cdn-cgi/image/width=800%2Cheight=400%/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F0y99xw9spzmsy4ggbk3s.jpeg)
+
+
+
+
+---
+transition: slide-left
+level: 2
+---
+
+# Explanation Of Each Types Of Queue
+- **Simple Queue:** In a simple queue, insertion occurs at the rear and removal occurs at the front. It strictly follows the FIFO (First in First out) principle.
+![simple queue image Representation](https://cdn.programiz.com/sites/tutorial2program/files/simple-queue_0.png)
+<br>
+- **Circular Queue:**  A circular queue is an extended version of a linear queue as it follows the First In First Out principle with the exception that it connects the last node of a queue to its first by forming a circular link. This is useful when memory is limited and you only need to access the most recent elements.
+The circular queue solves the major limitation of the normal queue. In a normal queue, after a bit of insertion and deletion, there will be non-usable empty space.
+
+
+
+---
+transition: slide-right
+level: 2
+---
+
+# Explanation Of Each Types Of Queue (Cont'd)
+<img width= "40%"  src="https://cdn.programiz.com/sites/tutorial2program/files/why-circular-queue.png" alt="limitation of normal queue">
+Here, indexes 0 and 1 can only be used after resetting the queue (deletion of all elements). This reduces the actual size of the queue.
+
+---
+class: px-20
+---
+
+# Explanation Of Each Types Of Queue (Cont'd)
+
+- **Piority Queue:** A priority queue is a special type of queue in which each element is associated with a priority and is served according to its priority. If elements with the same priority occur, they are served according to their order in the queue.
+
+<div  class='text-blue'>
+<ul>
+<li v-click>Ascending Order Priority Queue: As the name suggests, in ascending order priority queue, the element with a lower priority value is given a higher priority in the priority list.</li>
+<li v-click>Descending Order Priority Queue: opposite of ascending order priority queue,the element with the highest value has the highest priority. </li>
+</ul> 
+</div>
+<br>
+
+- **Dequeue (Double-Ended Queue):** this type of queue allows insertion and deletion from both ends (front and rear). It acts like a queue with two access points, offering more flexibility than a linear queue.
+
+
+---
+
+# Applications of Queue
+<div>
+<ol>
+<li v-click>Task Scheduling: <br>
+The operating system in your computer relies heavily on queues to manage tasks for the CPU. Processes are added to a queue, and the CPU picks up the first one in line for execution. This ensures fair allocation of processing power among multiple programs running on your computer.</li>
+<li v-click>Buffering:<br> Real-time Systems: Queues act as buffers between slow and fast devices. For instance, they can be used to temporarily store keystrokes typed on a keyboard until the CPU is ready to process them.</li>
+<li v-click>Other Applications:<br>Message Passing: Queues are a core component in many messaging systems. Messages are placed in a queue, ensuring they are delivered in the order they were sent, even if the recipient is unavailable.</li>
+</ol></div>
+
+---
+
+# Implementation of Queues
+Queues can be implemented using Two techniques:
+
+- Implementations of Queue Data Structure using Arrays
+- Implementations of Queue Data Structure using Linked List
+
+
+
+---
+
+# Implementations of Queue Data Structure using Arrays
+
+So how do we implement Queue using array?
+<div>
+1. Define the Queue Class:
+
+- Create a class named Queue to represent the queue data structure.<br>
+2. Initialize Properties in the Constructor
+
+- Inside the Queue class constructor, define the following properties:
+- maxSize: This integer value specifies the maximum number of elements the queue can hold (assuming a fixed-size array implementation).
+- queue: This is an empty array that will store the queue elements.
+- front: This integer variable acts as a pointer to the front element of the queue. Initially, set it to -1 to indicate an empty queue.
+- rear: This integer variable acts as a pointer to the last element added to the queue. Initially, set it to -1 as well.
+</div>
+
+---
+
+# Basic Queue Operations
+Enqueue(): Process of adding or storing an element to the end of the queue.
+
+dequeue(): Process of removing or accessing an element from the front of the queue.
+
+peek(): Used to get the element at the front of the queue without removing it.
+
+isEmpty(): Checks if the queue is empty.
+
+Size(): Finds the number of elements in the queue
+
+<p text-red-600>Go to queue.js file to practice!</p>
+
+

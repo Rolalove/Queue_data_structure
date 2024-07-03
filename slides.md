@@ -273,3 +273,62 @@ Size(): Finds the number of elements in the queue
     color: #00FF00; 
   }
 </style>
+
+---
+
+### How to Create a Queue data structure using a class in JavaScript.
+
+```js {monaco-run}
+class Queue {
+  constructor(maxSize) {
+    this.maxSize = maxSize;
+    this.queue = [];
+    this.front = this.rear = 0;
+  }
+  // Check if the queue is empty
+  isEmpty() {
+    return this.queue.length === 0;
+  }
+  enqueue(element) {
+    this.queue.push(element);
+  }
+  dequeue() {
+    // removing element from the queue
+    if (this.isEmpty()) return "Queue overflow";
+    return this.queue.shift();
+  }
+  peak() {
+    if (this.isEmpty()) {
+      return "No elements in the queue";
+    } else {
+      return this.queue[0];
+    }
+  }
+}
+
+const myQueue = new Queue(5);
+console.log(myQueue);
+//checks if the queue is empty
+console.log(myQueue.isEmpty());
+myQueue.enqueue(10);
+myQueue.enqueue(200);
+myQueue.enqueue(5);
+myQueue.enqueue(9);
+myQueue.enqueue(7);
+console.log(myQueue);
+console.log(myQueue.isEmpty());
+myQueue.dequeue();
+console.log(myQueue);
+console.log(myQueue.peak());
+```
+
+<style>
+  h3 {
+    color: #00FF00; 
+  }
+  .slidev-monaco-container {
+  @apply overflow-scroll max-h-screen-sm ;
+  max-height: 450px;
+
+}
+</style>

@@ -266,7 +266,7 @@ isEmpty(): Checks if the queue is empty.
 
 Size(): Finds the number of elements in the queue
 
-<p text-red-600>Go to queue.js file to practice!</p>
+
 
 <style scoped>
   h1 {

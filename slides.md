@@ -52,8 +52,6 @@ a{
 
 ---
 
-## transition: slide-left
-
 # Table of Contents ?
 
 - <Link to="3">Understand the idea behind Queue</Link>
@@ -63,16 +61,15 @@ a{
 - <Link to="7"> Explanation Of Each Types Of Queue</Link>
 - <Link to="10"> Applications of Queue</Link>
 - <Link to="11">Implementation of Queues</Link>
-- <Link to=""> Basic Queue Operations</Link>
-  <style>
-  h1{
-    color: #00FF00;
+- <Link to="13"> Basic Queue Operations</Link>
+
+<style scoped>
+  h1 {
+    color: #00FF00; 
   }
-  </style>
+</style>
 
 ---
-
-## transition: slide-left
 
 # Let understand the idea behind Queue ?
 
@@ -88,11 +85,6 @@ Let discuss!!!
     color: #00FF00; 
   }
 </style>
-
----
-
-transition: slide-up
-level: 2
 
 ---
 
@@ -118,10 +110,6 @@ The end at which insertion takes place is called the REAR/TAIL(the line the cust
 
 ---
 
-transition: slide-left
-
----
-
 # Visual Representation Of Queue Data Structure
 
 <div style="display: flex; justify-content: center;">
@@ -135,8 +123,6 @@ transition: slide-left
 </style>
 
 ---
-
-## transition: slide-left
 
 # Types Of Queue
 
@@ -158,8 +144,6 @@ transition: slide-left
 
 ---
 
-## transition: slide-left
-
 # Explanation Of Each Types Of Queue
 
 - **Simple Queue:** In a simple queue, insertion occurs at the rear and removal occurs at the front. It strictly follows the FIFO (First in First out) principle.
@@ -176,11 +160,6 @@ transition: slide-left
 
 ---
 
-transition: slide-right
-level: 2
-
----
-
 # Explanation Of Each Types Of Queue (Cont'd)
 
 <img width= "40%"  src="https://cdn.programiz.com/sites/tutorial2program/files/why-circular-queue.png" alt="limitation of normal queue">
@@ -193,8 +172,6 @@ Here, indexes 0 and 1 can only be used after resetting the queue (deletion of al
 </style>
 
 ---
-
-## class: px-20
 
 # Explanation Of Each Types Of Queue (Cont'd)
 

@@ -23,7 +23,7 @@ mdc: true
 ---
 
 # Queue Data Structure
-
+<div></div>
 Data Structure (Linear)
 <br>
 <br>
@@ -125,7 +125,7 @@ The end at which insertion takes place is called the REAR/TAIL(the line the cust
 ---
 
 # Types Of Queue
-
+<div></div>
 <p>Basically we have four types of Queue:</p>
 <div style="display: flex; justify-content: center;">
 <img class='0 auto' border="rounded" style="width: 70%; " src="/src/assets/Types-of-queue.jpeg" alt="Types-of-queue"> 
@@ -174,18 +174,18 @@ Here, indexes 0 and 1 can only be used after resetting the queue (deletion of al
 ---
 
 # Explanation Of Each Types Of Queue (Cont'd)
+<v-clicks>
 
 - **Piority Queue:** A priority queue is a special type of queue in which each element is associated with a priority and is served according to its priority. If elements with the same priority occur, they are served according to their order in the queue.
 
-<div  class='text-blue'>
-<ul>
-<li v-click>Ascending Order Priority Queue: As the name suggests, in ascending order priority queue, the element with a lower priority value is given a higher priority in the priority list.</li>
-<li v-click>Descending Order Priority Queue: opposite of ascending order priority queue,the element with the highest value has the highest priority. </li>
+<ul class='text-blue'>
+<li>Ascending Order Priority Queue: As the name suggests, in ascending order priority queue, the element with a lower priority value is given a higher priority in the priority list.</li>
+<li>Descending Order Priority Queue: opposite of ascending order priority queue,the element with the highest value has the highest priority. </li>
 </ul> 
-</div>
 <br>
 
 - **Dequeue (Double-Ended Queue):** this type of queue allows insertion and deletion from both ends (front and rear). It acts like a queue with two access points, offering more flexibility than a linear queue.
+</v-clicks>
 
 <style scoped>
   h1 {
@@ -196,14 +196,15 @@ Here, indexes 0 and 1 can only be used after resetting the queue (deletion of al
 ---
 
 # Applications of Queue
+<v-clicks>
 
-<div>
 <ol>
-<li v-click>Task Scheduling: <br>
+<li>Task Scheduling: <br>
 The operating system in your computer relies heavily on queues to manage tasks for the CPU. Processes are added to a queue, and the CPU picks up the first one in line for execution. This ensures fair allocation of processing power among multiple programs running on your computer.</li>
-<li v-click>Buffering:<br> Real-time Systems: Queues act as buffers between slow and fast devices. For instance, they can be used to temporarily store keystrokes typed on a keyboard until the CPU is ready to process them.</li>
-<li v-click>Other Applications:<br>Message Passing: Queues are a core component in many messaging systems. Messages are placed in a queue, ensuring they are delivered in the order they were sent, even if the recipient is unavailable.</li>
-</ol></div>
+<li>Buffering:<br> Real-time Systems: Queues act as buffers between slow and fast devices. For instance, they can be used to temporarily store keystrokes typed on a keyboard until the CPU is ready to process them.</li>
+<li>Other Applications:<br>Message Passing: Queues are a core component in many messaging systems. Messages are placed in a queue, ensuring they are delivered in the order they were sent, even if the recipient is unavailable.</li>
+</ol>
+</v-clicks>
 
 <style scoped>
   h1 {
@@ -214,9 +215,8 @@ The operating system in your computer relies heavily on queues to manage tasks f
 ---
 
 # Implementation of Queues
-
-Queues can be implemented using Two techniques:
-
+<div></div>
+Queues can be implemented using Two techniques:<br>
 - Implementations of Queue Data Structure using Arrays
 - Implementations of Queue Data Structure using Linked List
 
@@ -229,7 +229,7 @@ Queues can be implemented using Two techniques:
 ---
 
 # Implementations of Queue Data Structure using Arrays
-
+<div></div>
 So how do we implement Queue using array?
 
 <div>
@@ -255,6 +255,7 @@ So how do we implement Queue using array?
 ---
 
 # Basic Queue Operations
+<div></div>
 
 Enqueue(): Process of adding or storing an element to the end of the queue.
 

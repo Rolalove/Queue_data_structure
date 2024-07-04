@@ -217,7 +217,10 @@ The operating system in your computer relies heavily on queues to manage tasks f
 # Implementation of Queues
 <div></div>
 Queues can be implemented using Two techniques:<br>
+
 - Implementations of Queue Data Structure using Arrays
+<br>
+
 - Implementations of Queue Data Structure using Linked List
 
 <style scoped>

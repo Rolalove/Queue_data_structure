@@ -245,8 +245,8 @@ So how do we implement Queue using array?
 - Inside the Queue class constructor, define the following properties:
 - maxSize: This integer value specifies the maximum number of elements the queue can hold (assuming a fixed-size array implementation).
 - queue: This is an empty array that will store the queue elements.
-- front: This integer variable acts as a pointer to the front element of the queue. Initially, set it to -1 to indicate an empty queue.
-- rear: This integer variable acts as a pointer to the last element added to the queue. Initially, set it to -1 as well.
+- front: This integer variable acts as a pointer to the front element of the queue. Initially, set it to 0 to indicate an empty queue.
+- rear: This integer variable acts as a pointer to the last element added to the queue. Initially, set it to 0 as well.
 </div>
 
 <style scoped>
@@ -286,7 +286,7 @@ Size(): Finds the number of elements in the queue
 class Queue {
   constructor(maxSize) {
     this.maxSize = maxSize;
-    this.queue = [];
+    this.queue = []; //Initialize an empty array to represent the queue
     this.front = this.rear = 0;
   }
   // Check if the queue is empty
@@ -295,18 +295,26 @@ class Queue {
   }
   enqueue(element) {
     this.queue.push(element);
+    return this
   }
   dequeue() {
     // removing element from the queue
-    if (this.isEmpty()) return "Queue overflow";
-    return this.queue.shift();
+    if (this.isEmpty()) {
+      return "Queue overflow";
+    }
+    else (this.queue.shift()){
+      return this;
+    }
   }
   peak() {
     if (this.isEmpty()) {
       return "No elements in the queue";
     } else {
-      return this.queue[0];
+      return this.queue[this.front];
     }
+  }
+  size(){
+    return this.queue.length
   }
 }
 
@@ -314,18 +322,14 @@ const myQueue = new Queue(5);
 console.log(myQueue);
 //checks if the queue is empty
 console.log(myQueue.isEmpty());
-myQueue.enqueue(10);
-myQueue.enqueue(200);
-myQueue.enqueue(5);
-myQueue.enqueue(9);
-myQueue.enqueue(7);
+myQueue.enqueue(10).enqueue(55).enqueue(5).enqueue(9).enqueue(7);
 console.log(myQueue);
 console.log(myQueue.isEmpty());
-myQueue.dequeue();
+myQueue.dequeue().dequeue();
 console.log(myQueue);
 console.log(myQueue.peak());
+console.log(myQueue.size())
 ```
-
 <style>
   h3 {
     color: #00FF00; 
